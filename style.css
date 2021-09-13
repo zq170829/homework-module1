@@ -6,15 +6,26 @@ header {
     min-height: 400px;
     padding-top: 3em;
 }
+
+/* setting up header background picture for all pages*/
 #home header {
     background: no-repeat lightgray url(images/cliff_ocean.jpg);
     background-size: 1500px;
 }
+#activities header {
+    background: no-repeat lightgray url(images/runfly.jpeg);
+    background-size: 1500px;
+}
+#contact header {
+    background: no-repeat lightgray url(images/cliff_rock.jpeg);
+    background-size: 1500px;
+}
 
+/*style whole navigation */
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
-    width: 700px;
-    margin: 2em auto 0 auto;
+    width: 685px;
+    margin: 1em auto 0 auto;
     min-height: 100px;
     height: 100px;
 }
@@ -25,9 +36,9 @@ header {
     float: left;
 }
 
-/* Navagation */
+/* style Navagation Buttons */
 .main-menu {
-    margin-left: 227px;
+    margin-left: 200px;
     font-weight: 400;
 }
 
@@ -41,28 +52,27 @@ header {
     text-transform: uppercase;
     font-size: 14px;
 }
+/*shows users which page we are in*/
+.main-menu ul li.active {
+    background: #9ed034;
+    border: none;
+}
+.main-menu ul li.active a {
+    color: #fff;
+}
 
+/*delete underline attached on the links*/
 .main-menu ul li a {
     text-decoration: none;
     color: #888;
 }
 
+/*Pseudo Class*/
 .main-menu ul li a:hover {
     color: #9ed034;
 }
 
-.main-menu ul li.active {
-    background: #9ed034;
-    border: none;
-}
-
-.main-menu ul li.active a {
-    color: #fff;
-}
-
 /* Main */
-
-
  h2 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 2em;
@@ -77,11 +87,12 @@ h3 {
     font-size: 1.5em;
     margin-top: 1.5em;
 }
+
 main p {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 100px;
     margin-right: 150px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /* Partners */
@@ -90,14 +101,12 @@ section {
     background-color: #4288c3;
     margin-top: 50px;
 }
-
 section #partners {
     width: 1200px;
     padding: 2em 0 2em 0;
     margin: 0 auto;
     text-align: center;
 }
-
 section #partners .partner {
     display: inline-block;
     margin: 0 0.75em;
@@ -105,7 +114,6 @@ section #partners .partner {
     background-color: #fff;
     border-radius: 50%;
 }
-
 section #partners .partner img {
     width: 90px;
     height: 90px;
@@ -164,4 +172,126 @@ footer #nondisclaimer .social .fa-instagram {
 footer #nondisclaimer .social .fa-twitter {
     background-color: #125688;
     color: white;
+}
+
+/* Style Table */
+
+table {
+    width: 1000px;
+    margin: 3em auto 0 auto;
+}
+
+    /* Activities page-style the caption*/
+    caption {
+        background:#852b1b;
+        height: 40px;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: bold;
+        padding-top: 1em;
+    }
+
+    /* Activities Page-Table Head and Table Boday*/
+    thead {
+        background: #bde1ff;
+    }
+    tbody {
+        background: #eeffe6;
+        text-align: center;
+    }
+    /*Acticities Page-Add Border */
+    th, td {
+        width: 225px;
+        height: 75px;
+        vertical-align: middle;
+        border: solid 1px #852b1b;
+    }
+
+    /* Style First Collum */
+    th:first-child {
+        width: 125px;
+        height: 50px;
+        background: #4977d1;
+        color:#fff;
+    }
+    td:first-child {
+        font-weight: bold;
+        background: #bde1ff;
+
+    }
+
+/* Form Page */
+
+
+.contactinfo {
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+
+/* make "phone" and "Email" bold*/
+span:first-child {
+    font-weight: bold;
+    color:#9ed034
+}
+
+/* general styling for the whole form */
+legend {
+    color: #9ed034;
+    border-color: #9ed034;
+    font-weight: bold;
+    padding-left: 0em;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin: 15px 0 0 0;
+    padding: 10px 0 5px 0;
+    font-weight: bold;
+
+}
+
+fieldset {
+    margin-left: 100px;
+    padding-left: 2.5em;
+}
+
+.radios {
+display: unset;
+margin: 15px 0 0 0;
+padding: 10px 0 5px 0;
+font-weight: bold;
+}
+
+input {
+    width: 500px;
+}
+
+input[type="radio"]{
+    width: 25px;
+}
+
+
+textarea {
+    width: 500px;
+    height: 200px;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 20px 0 10px 400px;
+    width: 100px;
+    height: 30px;
+    background-color:#9ed034;
+    border:none;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+input[type="submit"]:hover{
+    background-color:#abe038;
+
+}
+select {
+    width: 100px;
 }

@@ -302,11 +302,10 @@ div.responsive img {
   width: 530px;
   height: 220px;
   margin-left: 100px;
-
 }
 
 div.desc {
-  margin-left:100px;
+  margin-left: 100px;
   width: 500px;
   padding: 15px;
   color: white;
@@ -319,5 +318,20 @@ div.row {
 }
 
 div.responsive {
-  margin-top:50px;
+  margin-top: 50px;
+}
+
+#timeofday {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.2em;
+  margin-top: 280px;
+  text-align: center;
+  padding: 1.3em;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+#time {
+  color: black;
+  font-weight: normal;
 }

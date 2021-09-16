@@ -27,6 +27,12 @@
                 </div>
             </nav>
         </div>
+        <div>
+            <section id=timeofday>
+                <span id="time">Your Current Local Time:</span>
+                <span id="clock"></span>
+            </section>
+        </div>
     </header>
 
     <main>
@@ -44,30 +50,30 @@
         <p>Located within a 100 mile radius from Irvine, California, they can be
             reached by roads easily. The closest cliff to Irvine is West Cliff,
             which is the most popular and most visited.</p>
-        </main>
+    </main>
 
-        <section>
-            <ul id="partners">
-                <li class="partner">
-                    <img src="partners/partner-bustour.png" alt="Partner Bus Tours">
-                </li>
-                <li class="partner">
-                    <img src="partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-                </li>
-                <li class="partner">
-                    <img src="partners/partner-campingadv.png" alt="Partner Camping Adventure">
-                </li>
-                <li class="partner">
-                    <img src="partners/partner-collegetours.png" alt="Partner College Tours">
-                </li>
-                <li class="partner">
-                    <img src="partners/partner-rentalbike.png" alt="Partner Bike Rentals">
-                </li>
-                <li class="partner">
-                    <img src="partners/partner-tourgroup.png" alt="Partner Tour Group">
-                </li>
-            </ul>
-        </section>
+    <section>
+        <ul id="partners">
+            <li class="partner">
+                <img src="partners/partner-bustour.png" alt="Partner Bus Tours">
+            </li>
+            <li class="partner">
+                <img src="partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+            </li>
+            <li class="partner">
+                <img src="partners/partner-campingadv.png" alt="Partner Camping Adventure">
+            </li>
+            <li class="partner">
+                <img src="partners/partner-collegetours.png" alt="Partner College Tours">
+            </li>
+            <li class="partner">
+                <img src="partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+            </li>
+            <li class="partner">
+                <img src="partners/partner-tourgroup.png" alt="Partner Tour Group">
+            </li>
+        </ul>
+    </section>
 
     <footer>
         <div id="nondisclaimer">
@@ -84,6 +90,51 @@
             </p>
         </div>
     </footer>
+    <!--JavaScript Codes-->
+    <script>
+        //create a time data function
+        function currentTime() {
+            //Declare variables
+            var d = new Date();//get current date
+            var hr = d.getHours();//get current hours 0-23
+            var min = d.getMinutes();//get current minutes 0-59
+            var sec = d.getSeconds();//get current seconds 0-59
+            var ampm;//declare empty variable to store AM or PM
+
+            //add 0 to single digits for seconds
+            if (sec < 10) {
+                sec = "0" + sec;
+            }
+            //add o to single digits for minutes
+            if (min < 10) {
+                min = "0" + min;
+            }
+
+            //determine AM or PM string
+            if (hr == 12) {
+                ampm = "PM";//Set to PM  
+            } else if (hr > 12) {
+                hr = hr - 12;
+                ampm = "PM";
+            } else {
+                ampm = "AM";
+            }
+
+            //Assemble time format to display
+            var time = hr + ":" + min + ":" + sec + " " + ampm;
+        
+            //Display current local time and time zone on HTML elements
+            document.getElementById("clock").innerText = time;//adding time
+        }
+            //Initial run of time data function
+            currentTime();
+
+            //Run time data function every 1 second
+            setInterval(currentTime, 1000);//setting timer      
+
+
+    </script>
+
 </body>
 
 </html>

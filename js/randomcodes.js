@@ -31,6 +31,7 @@ function disableButton(btnvalue) {
     document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
   }
 }
+
 disableButton(btnvalue);
 
 //listen to user input code
@@ -44,4 +45,5 @@ function evaluateCode() {
     disableButton(false);
   }
 }
+
 evaluateCode();

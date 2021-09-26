@@ -296,19 +296,18 @@ select {
   width: 100px;
 }
 
-
-.randomcode p{
-display: inline-block;
+.randomcode p {
+  display: inline-block;
 }
 
-.randomcode input{
-  margin-left:248px;
-  width:150px;
+.randomcode input {
+  margin-left: 248px;
+  width: 150px;
 }
 
 #codes {
   background-color: grey;
-  color:white;
+  color: white;
   width: 85px;
   padding: 0.5em;
   text-align: center;
@@ -347,12 +346,15 @@ div.responsive {
   margin-top: 280px;
   text-align: center;
   padding: 1.3em;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 #time {
   color: black;
   font-weight: normal;
 }
-

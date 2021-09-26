@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body id="contact">
+<body id="contact" onLoad="disableButton(true)">
     <header>
         <div class="main-header">
             <div class="logo">
@@ -86,7 +86,7 @@
             </div>
             <!--Random Codes-->
             <div class="randomcode">
-                <input type="text" name="randomcode" placeholder="Enter Character">
+                <input id="codeentered" type="text" name="randomcode" placeholder="Enter Character">
                 <p id="codes"></p>
             </div>
             <div class="button">

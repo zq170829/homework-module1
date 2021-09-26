@@ -283,7 +283,7 @@ input[type="submit"] {
   margin: 20px 0 10px 400px;
   width: 100px;
   height: 30px;
-  background-color: #9ed034;
+  /*background-color: #9ed034;*/
   border: none;
   color: #fff;
   text-align: center;
@@ -294,6 +294,26 @@ input[type="submit"]:hover {
 }
 select {
   width: 100px;
+}
+
+
+.randomcode p{
+display: inline-block;
+}
+
+.randomcode input{
+  margin-left:248px;
+  width:150px;
+}
+
+#codes {
+  background-color: grey;
+  color:white;
+  width: 85px;
+  padding: 0.5em;
+  text-align: center;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Style Gallery*/
@@ -335,3 +355,4 @@ div.responsive {
   color: black;
   font-weight: normal;
 }
+

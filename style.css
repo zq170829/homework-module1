@@ -358,3 +358,9 @@ div.responsive {
   color: black;
   font-weight: normal;
 }
+
+.highlight {
+  background-color: #9ed034;
+  color: white;
+  cursor: pointer;
+}

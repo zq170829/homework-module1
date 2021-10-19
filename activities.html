@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>First Page</title>
+    <title>Third Page</title>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -42,10 +42,10 @@
                                     <li class="nav-item">
                                         <a href="index.html">Home</a>
                                     </li>
-                                    <li class="nav-item active">
+                                    <li class="nav-item">
                                         <a href="cliffs.html">Cliffs</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item active">
                                         <a href="activities.html">Activities</a>
                                     </li>
                                     <li class="nav-item">
@@ -130,27 +130,39 @@
     </main>
 
     <section>
-        <ul id="partners">
-            <!--
-            <li class="partner">
-                <img src="partners/partner-bustour.png" alt="Partner Bus Tours">
-            </li>
-            <li class="partner">
-                <img src="partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-            </li>
-            <li class="partner">
-                <img src="partners/partner-campingadv.png" alt="Partner Camping Adventure">
-            </li>
-            <li class="partner">
-                <img src="partners/partner-collegetours.png" alt="Partner College Tours">
-            </li>
-            <li class="partner">
-                <img src="partners/partner-rentalbike.png" alt="Partner Bike Rentals">
-            </li>
-            <li class="partner">
-                <img src="partners/partner-tourgroup.png" alt="Partner Tour Group">
-            </li>-->
-        </ul>
+        <div id="partners">
+            <ul class="row">
+                <div class="col-sm-6 col-md-4 col-lg-2 my-3 my-lg-0">
+                    <li class="partner">
+                        <img src="partners/partner-bustour.png" alt="Partner Bus Tours" />
+                    </li>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 my-3 my-lg-0">
+                    <li class="partner">
+                        <img src="partners/partner-cabinrental.png" alt="Partner Cabin Rental" />
+                    </li>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 my-3 my-lg-0">
+                    <li class="partner">
+                        <img src="partners/partner-campingadv.png" alt="Partner Camping Adventure" />
+                    </li>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 my-3 my-lg-0">
+                    <li class="partner">
+                        <img src="partners/partner-collegetours.png" alt="Partner College Tours" />
+                    </li>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 my-3 my-lg-0">
+                    <li class="partner">
+                        <img src="partners/partner-rentalbike.png" alt="Partner Bike Rentals" />
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 my-3 my-lg-0">
+                    <li class="partner">
+                        <img src="partners/partner-tourgroup.png" alt="Partner Tour Group" />
+                    </li>
+                </div>
+            </ul>
+        </div>
     </section>
 
     <footer>
@@ -176,9 +188,10 @@
         <!-- End Disclaimer -->
     </footer>
 
-    <script src="js/site_scripts.js"></script>
+    <!-- <script src="js/site_scripts.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/activity.js"></script>
+
     <!-- Bootstrap jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

@@ -2,8 +2,7 @@
 
 header {
   width: 100%;
-  min-height: 400px;
-  padding-top: 3em;
+  min-height: 275px;
 }
 
 /* setting up header background picture for all pages*/
@@ -100,8 +99,9 @@ nav {
 
 .navbar-main {
   margin: 0 auto;
-  background-color: rgb(255, 255, 255, 0.8) !important;
+  background-color:  rgba(38, 41, 61, 0.7)!important;
   width: 60%;
+  color: rgb(255, 255, 255);
 }
 
 .navbar-expand-lg {
@@ -160,7 +160,6 @@ section #partners .partner img {
   border: 1px solid #c0c0c0;
   padding: 25px;
   min-height: 400px;
-  /* background-color: #9ed034; */
 }
 
 /* Footer */
@@ -296,6 +295,7 @@ caption {
   padding-top: 1em;
 }
 
+
 /* Activities Page-Table Head and Table Boday*/
 thead {
   background: #bde1ff;
@@ -333,13 +333,13 @@ td:first-child {
   padding-bottom: 20px;
 }
 
-/* make "phone" and "Email" bold*/
+
 span:first-child {
   font-weight: bold;
   color: #9ed034;
 }
 
-/* general styling for the whole form */
+
 legend {
   color: #9ed034;
   border-color: #9ed034;
@@ -380,20 +380,27 @@ textarea {
   height: 200px;
 }
 
-input[type="submit"] {
+/* input[type="submit"] {
   display: block;
   margin: 20px 0 10px 400px;
   width: 100px;
   height: 30px;
-  /*background-color: #9ed034;*/
   border: none;
   color: #fff;
   text-align: center;
   border-radius: 8px;
+} */
+
+.btn .fa-paper-plane{
+  width:70px;
+  color: white;
 }
+
+
 input[type="submit"]:hover {
   background-color: #abe038;
 }
+
 select {
   width: 100px;
 }
@@ -417,30 +424,15 @@ select {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Style Gallery*/
-
-div.responsive img {
-  width: 530px;
-  height: 220px;
-  margin-left: 100px;
-}
-
-div.desc {
-  margin-left: 100px;
-  width: 500px;
+/* Cliffs Start */
+#cliffs .gallery p {
   padding: 15px;
   color: white;
   text-align: center;
   background-color: #852b1b;
 }
+/*End of Cliffs */
 
-div.row {
-  display: flex;
-}
-
-div.responsive {
-  margin-top: 50px;
-}
 
 #timeofday {
   font-family: Arial, Helvetica, sans-serif;

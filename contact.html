@@ -2,31 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>First Page</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <!--  Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="contact" onLoad="disableButton(true)">
     <header>
-        <div class="main-header">
-            <div class="logo">
-                <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-            </div>
+        <div class="container-fluid">
+            <div class="navbar-main">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="logo">
+                            <a class="navbar-brand" href="#">
+                                <img class="" src="images/logo.png">
+                            </a>
+                        </div>
 
-            <nav>
-                <div class="main-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="cliffs.html">Cliffs</a></li>
-                        <li><a href="activities.html">Activities</a></li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <div class="main-menu">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="cliffs.html">Cliffs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="activities.html">Activities</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -136,6 +167,20 @@
         </footer>
         <script src="js/site_scripts.js"></script>
         <script src="js/randomcodes.js"></script>
+        <!-- Bootstrap jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

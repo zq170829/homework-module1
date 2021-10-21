@@ -280,41 +280,43 @@ footer #nondisclaimer .social .fa-twitter {
 }
 
 /* Style Table */
-table {
+/* table {
   width: 1000px;
   margin: 3em auto 0 auto;
-}
+} */
 
 /* Activities page-style the caption*/
-caption {
+.table caption {
   background: #852b1b;
-  height: 40px;
   color: #fff;
   font-size: 1.3em;
   font-weight: bold;
   padding-top: 1em;
+  text-align: center;
+  caption-side: top;
 }
 
-
-/* Activities Page-Table Head and Table Boday*/
 thead {
   background: #bde1ff;
+  
 }
+
 tbody {
   background: #eeffe6;
   text-align: center;
+  
 }
-/*Acticities Page-Add Border */
+
 th,
 td {
   width: 225px;
   height: 75px;
   vertical-align: middle;
   border: solid 1px #852b1b;
-  cursor: pointer;
+  
 }
 
-/* Style First Collum */
+
 th:first-child {
   width: 125px;
   height: 50px;
@@ -325,20 +327,17 @@ td:first-child {
   font-weight: bold;
   background: #bde1ff;
 }
+/*End Table Page */
 
 /* Form Page */
-
 .contactinfo {
-  margin-left: 100px;
   padding-bottom: 20px;
 }
-
 
 span:first-child {
   font-weight: bold;
   color: #9ed034;
 }
-
 
 legend {
   color: #9ed034;
@@ -348,17 +347,17 @@ legend {
   text-transform: uppercase;
 }
 
-label {
+/* label {
   display: block;
   margin: 15px 0 0 0;
   padding: 10px 0 5px 0;
   font-weight: bold;
-}
+} */
 
-fieldset {
+/* fieldset {
   margin-left: 100px;
   padding-left: 2.5em;
-}
+} */
 
 .radios {
   display: unset;
@@ -367,18 +366,18 @@ fieldset {
   font-weight: bold;
 }
 
-input {
+/* input {
   width: 500px;
-}
+}*/
 
 input[type="radio"] {
   width: 25px;
-}
+} 
 
-textarea {
+/* textarea {
   width: 500px;
   height: 200px;
-}
+} */
 
 /* input[type="submit"] {
   display: block;
@@ -409,10 +408,10 @@ select {
   display: inline-block;
 }
 
-.randomcode input {
+/* .randomcode input {
   margin-left: 248px;
   width: 150px;
-}
+} */
 
 #codes {
   background-color: grey;

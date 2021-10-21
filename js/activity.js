@@ -1,30 +1,28 @@
-// $(document).ready(function () {
-//   $("td")
-//     .not(':contains("Not Available")')
-//     .click(function () {
-//       $(this).toggleClass("highlight");
+// only collumns not containing "N/A" has pointer mouseover effect
+// $(document).ready(function(){
+//     $('td:contains("Not Available")').addClass("NA");
+//     $('td').slice(1,5).not('.NA').mouseover(function(){
+//         $(this).css('cursor','pointer');
 //     });
-// });
+    
 
-$(document).ready(function(){
-  $('td').click(function(){
-      var content = $(this).text();
-      var colIndex = $(this).index();
-      var colTitle = $('th:eq(' + colIndex + ')').text();
-      if (content !="Not Available"){
-          $(this).toggleClass('highlight');
+//    $('td').click(function(){
+//        var content =$(this).text();
+//        var contentIndx = $(this).index();
+//        var cliff =$(th).eq(contentIndx).text();
+//        if (content != 'Not Available'){
+//            $(this).toggleClass('highlight');
+//            $('#myModal').modal('show');
+//            if($(this).hasClass('highlight')){
+//                $('#result').append('<p>'+content+" at " +cliff + "</p")
+//            } else {
+//                $('#result p:contain('+content+')').remove();
+//                if($('#result').has('p').length ==false){
 
-      if($(this).hasClass('highlight')){
-          $('#displaySelected').css('visibility','visible');
-          $('#result').append('<p>'+ content+' at '+ colTitle +'</p>');
-      } else{
-          $('#result p:contains('+content+')').remove();
+//                }
+//            }
+//        }
+//    })
+//     })
 
-          if($('#result').has('p').length == false) {
-              $('#displaySelected').css('visiblity','hidden');
-              $('#displaySelected').css('margin-top','0');
-          }
-      }
-  }
-  });
-});
+
